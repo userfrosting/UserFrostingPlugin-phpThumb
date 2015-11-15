@@ -22,7 +22,7 @@ This plugin has had little to no testing by third parties or in live environment
 * `name of slim route` : as defined in the config. Built-in routes include "user-image", "public-image", and "my-image". Define your own for more customization.
 * `subfolder within imageFolder` an optional parameter unless requesting a "user-image", in which case you use the user ID of the image's owner
 * `source image filename`: need I say more?
-* `phpthumb paramters`: refer to the (phpThumb readme)[http://phpthumb.sourceforge.net/demo/docs/phpthumb.readme.txt]. NOTE: filters are handled differently. Instead of "fltr[]=" use "fltr1=","fltr2=", and so on for multiple filters
+* `phpthumb paramters`: refer to the [phpThumb readme](http://phpthumb.sourceforge.net/demo/docs/phpthumb.readme.txt). NOTE: filters are handled differently. Instead of "fltr[]=" use "fltr1=","fltr2=", and so on for multiple filters
 
 ### Example
 The following will display the image "stuck.jpg" from the publicly viewable folder using only the default phpthumb parameters.
