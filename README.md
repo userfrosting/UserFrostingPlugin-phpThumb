@@ -30,6 +30,10 @@ The following will display the image "stuck.jpg" from the publicly viewable fold
 <img class="thumbnail" src="{{site.uri.public}}{{ pthumb("public-image","","stuck.jpg","") }}">
 ```
 
+### Test Page
+**this is what you should see when you load /phpthumbtest**
+![preview](https://cloud.githubusercontent.com/assets/593791/11167826/2d55630c-8b41-11e5-9f4f-1a9ebe68be81.jpg)
+
 ### Up to you
 * This is not a file manager by any means. If you choose to utilize the option "usersHaveSubdirectories" it will be up to you to figure out how those files will get there. Be sure to take [safety precautions](http://security.stackexchange.com/questions/32852/risks-of-a-php-image-upload-form) in handling file uploads, especially if you don't personally know your users.
 
