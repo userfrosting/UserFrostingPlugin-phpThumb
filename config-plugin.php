@@ -39,13 +39,15 @@ require_once('controllers/ThumbController.php');
 			  mkdir($config['imageFolder']."/".$app->user->id);
 			  }
 	}
+	
+	
 // setup some UF stuff and define necessary variables
 	$twig = $app->view()->getEnvironment();
 	$loader = $twig->getLoader();
-	$loader->addPath($app->config('plugins.path') . "/uf-phpThumb/templates");
+	$loader->addPath($app->config('plugins.path') . "/UserFrostingPlugin-phpThumb/templates");
 
 
-//twig functions
+//define our twig function
 
 	//pthumb() - generate a secure url for a thumbnail
 	$function = new Twig_SimpleFunction('pthumb', function ($imageType,$folder="",$filename,$parameters) use($app,$config) {
