@@ -47,16 +47,12 @@ class ThumbController extends \phpThumb {
 		$hashparameters = "";
 		
 		$last = key( array_slice( $tparameters, -1, 1, TRUE ) );
-		$output_filename = $basefolder."/";
 		foreach($tparameters as $p => $v){
-			$output_filename .= preg_replace('/[^A-Za-z0-9_\-]/', '_', ($p."-".$v));
 			$hashparameters .= $p."=".$v;
 			if($p!=$last){
-				$output_filename .= "&";
 				$hashparameters .= "&";
 			}
 		}
-		$output_filename .= ".jpg";
 			$phpThumb = $this->phpThumb;
 			$errorpage = new \UserFrosting\BaseController($this->_app);
 			if (!empty($phpThumb->config_high_security_enabled)) {
@@ -83,7 +79,8 @@ class ThumbController extends \phpThumb {
 			}
 		
 		if(!is_dir($basefolder)){mkdir($basefolder);}
-		if(file_exists($output_filename))
+		$output_filename = $basefolder."/".$hash.".jpg";
+		if(file_exists($basefolder.$output_filename))
 		{
 			$this->_app->response->headers->set("Content-Type", "image/jpeg");
 			echo file_get_contents($output_filename);
