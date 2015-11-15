@@ -119,7 +119,6 @@ require_once('controllers/ThumbController.php');
 			}
 		}
 		$thumb = new \phpThumb\ThumbController($app,$config);
-		error_log($app->user->id);
 		if(
 				($config['userImage_onlyThisUser'] && $uid === $app->user->id)
 			||	(!$config['userImage_onlyThisUser'])

@@ -49,7 +49,6 @@ class ThumbController extends \phpThumb {
 		$last = key( array_slice( $tparameters, -1, 1, TRUE ) );
 		$output_filename = $basefolder."/";
 		foreach($tparameters as $p => $v){
-				error_log('$param:'.$p);
 			$output_filename .= preg_replace('/[^A-Za-z0-9_\-]/', '_', ($p."-".$v));
 			$hashparameters .= $p."=".$v;
 			if($p!=$last){
