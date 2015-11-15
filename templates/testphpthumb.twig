@@ -31,6 +31,10 @@
 {% endfor %}
 		</pre>
     </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
     <div class="col-lg-12">
 		<h3>test images</h3>
 		<img class="pull-left thumbnail" style="margin-right: 16px;" src="{{site.uri.public}}{{ pthumb("public-image","","stuck.jpg","ra=30&q=40&bg=000000&fltr1=clr|50|ff0000&fltr2=brit|90") }}">
@@ -44,7 +48,11 @@
 		<span class="label label-default">Filter: Colorize 50% with #ff000</span>
 		<span class="label label-default">Filter: Brightness 90%</span>
     </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
     {% if(config.usersHaveSubdirectories) %}
+<div class="row">
 	<div class="col-lg-12">
 		<img class="pull-left thumbnail" style="margin-right: 16px;" src="{{site.uri.public}}{{ pthumb("my-image","","stuck.jpg","ra=20") }}">
 		<pre>
@@ -53,6 +61,10 @@
 		</pre>
 		<span class="label label-default">Rotate 20 Degrees</span>
     </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
     <div class="col-lg-12">
 		<img class="pull-left thumbnail" style="margin-right: 16px;" src="{{site.uri.public}}{{ pthumb("user-image","50","stuck.jpg","ra=10") }}">
 		<pre>
@@ -65,9 +77,9 @@
 		{% endif %}
 	</div>
     <!-- /.col-lg-12 -->
-	{% endif %}
 </div>
 <!-- /.row -->
+	{% endif %}
 <div class="row">
     <div class="col-lg-12">
 		<h3>parameters</h3>
