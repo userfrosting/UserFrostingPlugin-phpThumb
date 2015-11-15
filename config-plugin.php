@@ -10,7 +10,7 @@ require_once('controllers/ThumbController.php');
 	'imageFolder' => "images/imgdb", //default or parent directory for images
 	'userImage_onlyThisUser' => true, //if true, the current user can only see their own images
 	'usersHaveSubdirectories' => true, //if true, a "public" folder is created for any user/guest to view
-	'high_security_password' => '.^1!@%)cCMq2(A$R09bp]-=4ƒ g', //must be a very very secure password
+	'high_security_password' => '', //must be a very very secure password
 	'default_parameters' => [	"w" => "200",
 								"h" => "200",
 								"zc" => 1
